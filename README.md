@@ -19,3 +19,10 @@ docker build -t face-recognition/tensorflow:2.1.0-gpu-py3-jupyter .
 cd ..
 docker run --gpus all -u $(id -u):$(id -g) --rm -p 8888:8888 -p 6006:6006 -v $(pwd):/project -it --name face-recognition-project face-recognition/tensorflow:2.1.0-gpu-py3-jupyter
 ```
+### Download dataset 
+
+[UTKFace dataset](https://susanqq.github.io/UTKFace/)
+
+### Download VGG face net weights
+
+[Link to download weights](https://drive.google.com/uc?id=1CPSeum3HpopfomUEK1gybeuIVoeJT_Eo)
